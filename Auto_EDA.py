@@ -451,7 +451,9 @@ def generate_report(df, outliers, file_name="eda_report.pdf"):
 
     # Output the report
     pdf.output(file_name)
-    st.write(f"\nPDF report generated: {file_name}")
+
+    return file_name  # Return the file name to allow download
+
 
 # Streamlit interface
 st.title("Exploratory Data Analysis (EDA)")
@@ -510,5 +512,16 @@ if uploaded_file is not None:
         multivariate_analysis(df)
         
         # Generate PDF Report
+        # After the user clicks the "Generate PDF Report" button
         if st.button("Generate PDF Report"):
-            generate_report(df, outliers)
+            file_name = generate_report(df, outliers)
+            st.write(f"\nPDF report generated: {file_name}")
+        
+            # Add a download button for the report
+            with open(file_name, "rb") as file:
+                st.download_button(
+                    label="Download PDF Report",
+                    data=file,
+                    file_name=file_name,
+                    mime="application/pdf"
+                )
