@@ -267,7 +267,7 @@ def generate_report(df, outliers, file_name="eda_report.pdf"):
 st.title("📊 Automated Exploratory Data Analysis (EDA)")
 st.markdown(
         """
-    Welcome to the **Automated Data Profiling Dashboard**! Upload your CSV dataset below to perform an extensive Exploratory Data Analysis (EDA) and prepare your data for machine learning model building.
+    Welcome to the **Automated Exploratory Data Analysis Dashboard**! Upload your CSV dataset below to perform an extensive Exploratory Data Analysis (EDA) and prepare your data for machine learning model building.
     """
     )
 
