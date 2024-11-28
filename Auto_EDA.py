@@ -261,12 +261,12 @@ def generate_report(df, outliers, file_name="eda_report.pdf"):
 
     # Output the report
     pdf.output(file_name)
-    st.success(f"Report generated: {file_name}")
+    st.success(f"✅Report generated: {file_name}")
 
 # Streamlit interface
-st.title("Exploratory Data Analysis (EDA)")
+st.title("📊 Automated Exploratory Data Analysis (EDA)")
 
-uploaded_file = st.file_uploader("Upload a Dataset", type=["csv", "xls", "xlsx", "json", "txt"])
+uploaded_file = st.file_uploader("📁 Upload a Dataset", type=["csv", "xls", "xlsx", "json", "txt"])
 
 if uploaded_file is not None:
     df = load_data(uploaded_file)
@@ -293,7 +293,7 @@ if uploaded_file is not None:
         generate_report(df, outliers)
         
         
-        with open("eda_report.pdf", "rb") as f:
+        with open("📥eda_report.pdf", "rb") as f:
             report_data = f.read()
             st.download_button(
                 label="Download EDA Report",
