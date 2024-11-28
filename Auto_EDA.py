@@ -265,6 +265,11 @@ def generate_report(df, outliers, file_name="eda_report.pdf"):
 
 # Streamlit interface
 st.title("📊 Automated Exploratory Data Analysis (EDA)")
+st.markdown(
+        """
+    Welcome to the **Automated Data Profiling Dashboard**! Upload your CSV dataset below to perform an extensive Exploratory Data Analysis (EDA) and prepare your data for machine learning model building.
+    """
+    )
 
 uploaded_file = st.file_uploader("📁 Upload a Dataset", type=["csv", "xls", "xlsx", "json", "txt"])
 
