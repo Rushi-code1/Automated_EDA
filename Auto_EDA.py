@@ -293,10 +293,10 @@ if uploaded_file is not None:
         generate_report(df, outliers)
         
         
-        with open("📥eda_report.pdf", "rb") as f:
+        with open("eda_report.pdf", "rb") as f:
             report_data = f.read()
             st.download_button(
-                label="Download EDA Report",
+                label="📥 Download EDA Report",
                 data=report_data,
                 file_name="eda_report.pdf",
                 mime="application/pdf"
