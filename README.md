@@ -1,101 +1,47 @@
-# Exploratory Data Analysis (EDA) with Streamlit
+# 📈 AutoEDA — High-Speed Exploratory Data Analysis Toolkit
 
-This project provides an interactive web application using **Streamlit** for performing **Exploratory Data Analysis (EDA)** on any dataset. It includes various features such as visualizations, statistical summaries, outlier detection, and the generation of a detailed PDF report summarizing the analysis.
+> A streamlined Python automated exploratory data analysis tool that performs comprehensive data hygiene checks, outlier detection, and univariate/bivariate visualizations in seconds.
 
-## Features
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-2.2-150458?logo=pandas&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-0.13-3776AB?logo=python&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.9-11557C?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-success)
 
-- **Data Upload**: Upload CSV, Excel, JSON, or TXT files to analyze.
-- **Data Understanding**: Provides basic insights about the dataset such as shape, data types, and a preview of the data.
-- **Missing Value Handling**: Automatically handles missing values by imputing them with appropriate values (e.g., median for numeric columns, mode for categorical columns).
-- **Duplicate Removal**: Removes duplicate rows in the dataset.
-- **Outlier Detection**: Detects and reports outliers using the Interquartile Range (IQR) method.
-- **Univariate Analysis**: Visualizes distributions of individual variables using histograms and boxplots.
-- **Bivariate Analysis**: Explores relationships between two variables using scatter plots and correlation heatmaps.
-- **Multivariate Analysis**: Investigates the relationships between multiple variables using pair plots, box plots grouped by categorical variables, and KMeans clustering.
-- **PDF Report Generation**: Generates a PDF report with insights, visualizations, and recommendations for the next steps.
+---
 
-## Requirements
+## 🚀 Features
 
-- Python 3.x
-- Streamlit
-- Pandas
-- Numpy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- fpdf
+- **Automated Summary Statistics** — Computes central tendency, spread, skewness, and kurtosis across all numerical columns.
+- **Missing Value Auditing** — Visualizes null values and percentage sparsity across all features.
+- **Distribution Plots** — Generates histograms, kernel density plots, and box plots to detect multi-modal distributions and anomalies.
+- **Correlation Analysis** — Generates formatted heatmap visualizations displaying inter-variable relationships.
 
-You can install the necessary dependencies using `pip`:
+---
+
+## ⚡ Quick Start
 
 ```bash
-pip install streamlit pandas numpy matplotlib seaborn scikit-learn fpdf
+git clone https://github.com/Rushi-code1/Automated_EDA.git
+cd Automated_EDA
+pip install -r requirements.txt
+python Auto_EDA.py
 ```
 
-## Installation
+---
 
-1. Clone the repository:
-   
-   ```bash
-   git clone https://github.com/yourusername/eda-streamlit-app.git
-   cd eda-streamlit-app
-   ```
+## 👨‍💻 Author & Connect
 
-2. Install the dependencies:
+**Rushikesh Deshmukh**  
+*Full Stack Developer & AI Engineer*
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rushikesh_Deshmukh-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/rushikesh-sunil-deshmukh)
+[![GitHub](https://img.shields.io/badge/GitHub-Rushi--code1-181717?logo=github&logoColor=white)](https://github.com/Rushi-code1)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-6366F1?logo=google-chrome&logoColor=white)](https://rushi-code1.github.io/portfolio2/)
+[![Email](https://img.shields.io/badge/Email-rushikesh.deshmukh1103%40gmail.com-EA4335?logo=gmail&logoColor=white)](mailto:rushikesh.deshmukh1103@gmail.com)
 
-3. Run the Streamlit application:
+---
 
-   ```bash
-   streamlit run app.py
-   ```
+## 📄 License
 
-   This will open the application in your default web browser.
-
-## Usage
-
-1. Upload your dataset using the "Upload" button.
-2. The application will automatically handle missing values, remove duplicates, and detect outliers.
-3. Visualizations for univariate, bivariate, and multivariate analysis will be generated.
-4. You can interact with the visualizations and explore the data.
-5. At the end of the analysis, a PDF report will be generated, which includes:
-    - A summary of the dataset
-    - Details about missing values, duplicates, and outliers
-    - Visualizations for univariate, bivariate, and multivariate analysis
-    - Suggestions for next steps, such as feature engineering or model building
-
-## Example Output
-
-The application generates a PDF report that includes:
-- **Dataset Overview**: The shape, columns, and basic statistics of the dataset.
-- **Outlier Detection**: Identifies any outliers in numerical columns using the IQR method.
-- **Visualizations**: Displays histograms, boxplots, scatter plots, correlation heatmaps, and KMeans clustering results.
-- **Suggestions**: Recommendations for the next steps in the data science workflow, including feature engineering and model building.
-
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature-name`).
-6. Open a pull request.
-
-
-## Acknowledgments
-
-- Streamlit for creating an easy-to-use tool for building web applications.
-- Pandas, Numpy, Matplotlib, and Seaborn for providing powerful data analysis and visualization tools.
-- Scikit-learn for implementing machine learning algorithms like KMeans.
-
-### Key Sections in the `README`:
-
-- **Project Overview**: A brief description of what the project does and its core features.
-- **Requirements**: The Python packages required to run the application.
-- **Installation**: Steps to install and run the project locally.
-- **Usage**: A simple guide on how to use the Streamlit app for EDA.
-- **Example Output**: An outline of the generated PDF report contents.        
-- **Contributing**: Instructions on how others can contribute to the project.
-- **License**: Licensing information (you can change it if needed).
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
